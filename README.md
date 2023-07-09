@@ -22,8 +22,6 @@ React Share: Provides social sharing functionality for Facebook, Twitter, and Wh
 Contributing:
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-License:
-This project is licensed under the MIT License.
 
 Acknowledgements:
 The random images are fetched from the Picsum API.
