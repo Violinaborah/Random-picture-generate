@@ -1,0 +1,97 @@
+.randomImage {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgb(13, 106, 178), rgb(4, 247, 150));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .imageContainer {
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.09);
+    padding: 15px;
+    border-radius: 10px;
+
+    img {
+      height: 400px;
+      width: 400px;
+    }
+  }
+
+  p {
+    /* Add your styles for image details here */
+  }
+
+  .shareOption {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.651);
+    box-shadow: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    span {
+      font-weight: 500;
+      font-size: 13px;
+    }
+
+    .shareDetails {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        gap: 5px;
+        cursor: pointer;
+        transition: transform 0.3s;
+        border: 1px solid rgb(128, 248, 242);
+
+        span {
+          display: none; /* Hide button text on mobile */
+        }
+      }
+
+      @media (max-width: 480px) {
+        /* Add mobile styles */
+        flex-wrap: wrap;
+
+        button {
+          width: 100%;
+          height: 50px;
+
+          span {
+            display: inline-block; /* Show button text on mobile */
+          }
+        }
+      }
+
+      button:hover {
+        background: linear-gradient(
+          to left,
+          rgb(7, 90, 173),
+          rgb(104, 199, 239)
+        );
+        color: white;
+        transform: scale(1.1);
+      }
+
+      button:span:hover {
+        color: rgb(231, 248, 136); /* Set hover color */
+      }
+    }
+  }
+}
